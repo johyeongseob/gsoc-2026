@@ -1,6 +1,7 @@
 # Pipeline Run and Validation
 
-During the project, I validated the pipeline through CLI inference runs, agent orchestration runs, chat-system checks, SQLite output inspection, and Web UI testing.
+The pipeline was validated through CLI inference runs, agent orchestration runs, chat-system checks, SQLite output inspection, and Web UI testing.
+
 
 ## Inference Validation
 
@@ -50,3 +51,45 @@ python interactive_chat.py --config config/oil_gas_pipeline/config.yaml
 ```
 
 This verifies natural-language routing across analysis, evidence, SQL, and use-case-specific modes such as corrosion.
+
+## Web UI Validation
+
+The Web UI was also validated through the browser. The helper script provides commands to start, restart, stop, and check the server status.
+
+To see the available Web UI commands:
+
+```bash
+python scripts/launch_web_app.py --help
+```
+
+To start the Web UI server:
+
+```bash
+python scripts/launch_web_app.py start
+```
+
+After the server starts, open the interface at:
+
+```text
+http://localhost:5000
+```
+
+To check whether the server is running:
+
+```bash
+python scripts/launch_web_app.py status
+```
+
+To restart the server after code or config changes:
+
+```bash
+python scripts/launch_web_app.py restart
+```
+
+To stop the server:
+
+```bash
+python scripts/launch_web_app.py stop
+```
+
+The Web UI validation checked that a use case can be selected, the pipeline can be started from the browser, outputs are displayed, and chat questions are routed to the expected backend mode.

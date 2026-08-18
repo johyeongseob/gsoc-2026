@@ -1,4 +1,4 @@
-# Google Summer of Code 2026
+# Google Summer of Code 2026 Work Product
 
 **Contributor:** Hyeongseob Jo  
 **Organization:** Intel / OpenVINO  
@@ -11,6 +11,11 @@
 
 This repository summarizes my Google Summer of Code (GSoC) 2026 work on the Intel OpenVINO predictive maintenance pipeline. The detailed work is organized by task so each contribution area can be reviewed independently.
 
+## Demo
+
+![Chat system demo](assets/chat_system.gif)
+
+The demo shows the unified chat interface routing natural-language questions to the appropriate backend mode.
 ## Work Summary
 
 - [Task 1: Chatbot Integration](docs/task1-chatbot-integration.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
@@ -26,9 +31,13 @@ This repository summarizes my Google Summer of Code (GSoC) 2026 work on the Inte
 
 ## Testing and Validation
 
+![Pipeline orchestration demo](assets/orchestration.gif)
+
 Detailed validation commands and examples are available in [Pipeline Run and Validation](docs/pipeline-run-and-validation.md).
 
 
 ## Final Submission Note
 
 This repository is intended as the public GSoC final work product summary. It links to the upstream pull requests and summarizes what was implemented, validated, and left for future work.
+
+
