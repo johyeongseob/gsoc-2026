@@ -1,6 +1,6 @@
-# Testing and Validation
+# Pipeline Run and Validation
 
-During the project, I validated the pipeline through inference runs, agent orchestration runs, chat-system checks, SQLite output inspection, Web UI testing, and pytest-based regression tests.
+During the project, I validated the pipeline through CLI inference runs, agent orchestration runs, chat-system checks, SQLite output inspection, and Web UI testing.
 
 ## Inference Validation
 
@@ -50,14 +50,3 @@ python interactive_chat.py --config config/oil_gas_pipeline/config.yaml
 ```
 
 This verifies natural-language routing across analysis, evidence, SQL, and use-case-specific modes such as corrosion.
-
-## Test Suite Validation
-
-I also added and ran pytest-based regression tests:
-
-```bash
-python -m pytest tests/test_agent_composition.py
-python -m pytest tests/test_oil_gas_chat_routing.py tests/test_oil_gas_agent_outputs.py -v
-```
-
-These tests check configurable agent composition, chat routing behavior, SQLite output columns, and generated agent artifacts.

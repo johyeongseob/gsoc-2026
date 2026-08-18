@@ -1,4 +1,4 @@
-# Google Summer of Code 2026 - Final Work Product
+# Google Summer of Code 2026
 
 **Contributor:** Hyeongseob Jo  
 **Organization:** Intel / OpenVINO  
@@ -7,12 +7,9 @@
 
 **GSoC Project Page:** [Project Details](https://summerofcode.withgoogle.com/myprojects/details/yvVZsgrT)
 
-**Mentors:**
-- Hassnaa Moustafa
-- Anand Bodas
-- Rohit1 Verma
+**Mentors:** Hassnaa Moustafa, Anand Bodas, Rohit1 Verma
 
-This repository summarizes my Google Summer of Code 2026 work on the Intel OpenVINO predictive maintenance pipeline. The detailed work is organized by task so each contribution area can be reviewed independently.
+This repository summarizes my Google Summer of Code (GSoC) 2026 work on the Intel OpenVINO predictive maintenance pipeline. The detailed work is organized by task so each contribution area can be reviewed independently.
 
 ## Work Summary
 
@@ -25,40 +22,12 @@ This repository summarizes my Google Summer of Code 2026 work on the Intel OpenV
 
 - Task 1, Task 2, and Task 3a: [PR #5](https://github.com/intel/predictive-maintenance-pipeline/pull/5)
 - Task 3b - Oil and Gas Pipeline: [PR #6](https://github.com/intel/predictive-maintenance-pipeline/pull/6)
+- Task 3b - Solar Panel Defect: [PR #8](https://github.com/intel/predictive-maintenance-pipeline/pull/8)
 
 ## Testing and Validation
 
-Detailed validation commands and examples are available in [Testing and Validation](docs/testing-and-validation.md).
+Detailed validation commands and examples are available in [Pipeline Run and Validation](docs/pipeline-run-and-validation.md).
 
-## Current State
-
-Completed:
-
-- Chatbot routing and analysis integration
-- SQLite-backed result querying
-- Modular inference dispatcher refactor
-- Configurable agent graph
-- New use-case scaffold script
-- Oil and Gas Pipeline use case
-
-In progress:
-
-- Solar Panel Defects use case
-
-## Remaining Work
-
-The remaining work before final submission is:
-
-- Complete the Solar Panel Defects use case.
-- Add tests for the solar panel defect detection flow.
-- Update final documentation and PR links.
-- Share this report with mentors before submitting the final GSoC evaluation.
-
-## Challenges and Lessons Learned
-
-During this project, I learned how to connect model inference, structured database storage, LLM-based analysis, and web UI interaction into one pipeline. I also learned the importance of keeping use-case behavior configurable, writing clear tests, and making PRs easier to review with focused commits and documentation.
-
-The most important engineering lesson was that adding a new model is only one part of the system. The output schema, SQL querying, agent prompts, chatbot routing, tests, and documentation all need to work together for the use case to be useful.
 
 ## Final Submission Note
 
