@@ -18,10 +18,10 @@ This repository summarizes my Google Summer of Code (GSoC) 2026 work on the Inte
 The demo shows the unified chat interface routing natural-language questions to the appropriate backend mode.
 ## Work Summary
 
-- [Task 1: Chatbot Integration](docs/task1-chatbot-integration.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
-- [Task 2: SQL Schema and Sensor Agent Support](docs/task2-sql-schema-sensor-agent.md) - Extended schema-aware SQLite querying and agent outputs for sensor-based predictive maintenance results.
-- [Task 3a: Inference Dispatcher Refactoring](docs/task3a-inference-dispatcher-refactoring.md) - Refactored inference into handlers, output writers, config builders, and reusable runner modules.
-- [Task 3b: New Use Case Expansion](docs/task3b-new-use-case-expansion.md) - Expanded the pipeline to new infrastructure use cases, including Oil and Gas Pipeline and Solar Panel Defects.
+- [Task 1: Chatbot Integration](docs/task1-unified-chat-interface.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
+- [Task 2: SQL Schema and Sensor Agent Support](docs/task2-input-schema.md) - Extended schema-aware SQLite querying and agent outputs for sensor-based predictive maintenance results.
+- [Task 3a: Inference Dispatcher Refactoring](docs/task3a-inference-refactor.md) - Refactored inference into handlers, output writers, config builders, and reusable runner modules.
+- [Task 3b: New Use Case Expansion](docs/task3b-new-use-case.md) - Expanded the pipeline to new infrastructure use cases, including Oil and Gas Pipeline and Solar Panel Defects.
 
 ## Pull Requests
 
