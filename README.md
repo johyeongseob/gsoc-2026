@@ -5,7 +5,7 @@
 **Project:** Agentic AI for Predictive Maintenance using OpenVINO  
 **Repository:** [intel/predictive-maintenance-pipeline](https://github.com/intel/predictive-maintenance-pipeline)
 
-**GSoC Project Page:** [Project Details](https://summerofcode.withgoogle.com/myprojects/details/yvVZsgrT)
+**GSoC Project Page:** [Project Details](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT)
 
 **Mentors:** Hassnaa Moustafa, Anand Bodas, Rohit1 Verma
 
