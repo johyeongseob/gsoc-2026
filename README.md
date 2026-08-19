@@ -24,7 +24,16 @@ The demo shows the unified chat interface routing natural-language questions to 
 - [Task 1: Chatbot Integration](docs/task1-unified-chat-interface.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
 - [Task 2: SQL Schema and Sensor Agent Support](docs/task2-input-schema.md) - Extended schema-aware SQLite querying and agent outputs for sensor-based predictive maintenance results.
 - [Task 3a: Inference Dispatcher Refactoring](docs/task3a-inference-refactor.md) - Refactored inference into handlers, output writers, config builders, and reusable runner modules.
-- [Task 3b: New Use Case Expansion](docs/task3b-new-use-case.md) - Expanded the pipeline to new infrastructure use cases, including Oil and Gas Pipeline and Solar Panel Defects.
+- [Task 3b - Dataset E: Oil and Gas Pipeline](docs/task3b-dataset-e-oil-gas-pipeline.md) - Added condition classification, thickness-loss regression, and corrosion analysis for pipeline sensor data.
+- [Task 3b - Dataset A1: Solar Panel Defects](docs/task3b-dataset-a1-solar-panel-defects.md) - Added OpenVINO object detection and agent analysis for solar-cell electroluminescence images.
+
+## The Current State
+
+Task 3b - Dataset A2 is currently in progress.
+
+## What's Left to Do
+
+Task 3b - Datasets G and H remain to be completed.
 
 ## Pull Requests
 
@@ -42,5 +51,3 @@ Detailed validation commands and examples are available in [Pipeline Run and Val
 ## Final Submission Note
 
 This repository is intended as the public GSoC final work product summary. It links to the upstream pull requests and summarizes what was implemented, validated, and left for future work.
-
-
