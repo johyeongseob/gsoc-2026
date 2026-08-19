@@ -7,7 +7,10 @@
 
 **GSoC Project Page:** [Project Details](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT)
 
-**Mentors:** Hassnaa Moustafa, Anand Bodas, Rohit1 Verma
+**Mentors:** 
+- Hassnaa Moustafa
+- Anand Bodas
+- Rohit Verma
 
 This repository summarizes my Google Summer of Code (GSoC) 2026 work on the Intel OpenVINO predictive maintenance pipeline. The detailed work is organized by task so each contribution area can be reviewed independently.
 
