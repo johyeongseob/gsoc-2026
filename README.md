@@ -16,10 +16,11 @@ This repository summarizes my Google Summer of Code (GSoC) 2026 leveraging Intel
 
 
 ## Demo
+The demo shows the unified chat interface routing natural-language questions to the appropriate backend mode.
 
 ![Chat system demo](assets/chat_system.gif)
 
-The demo shows the unified chat interface routing natural-language questions to the appropriate backend mode.
+
 ## Work Summary
 
 - [Feature 1: Chatbot Integration](docs/task1-unified-chat-interface.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
@@ -52,10 +53,9 @@ Feature 3b - Datasets G and H remain to be completed.
 - Feature 3b - Solar Panel Defect: [PR #8](https://github.com/intel/predictive-maintenance-pipeline/pull/8)
 
 ## Testing and Validation
+Detailed validation commands and examples are available in [Pipeline Run and Validation](docs/pipeline-run-and-validation.md).
 
 ![Pipeline orchestration demo](assets/orchestration.gif)
-
-Detailed validation commands and examples are available in [Pipeline Run and Validation](docs/pipeline-run-and-validation.md).
 
 
 ## Final Submission Note
