@@ -1,6 +1,6 @@
-# Task 1: Unified Chat Interface
+# Feature 1: Unified Chat Interface
 
-This task replaced the previous mode-selection chat flow with a unified chat interface. Users no longer need to manually choose between analysis, evidence, and SQL modes before asking a question. Instead, the backend detects the user intent and routes each question to the appropriate handler.
+This feature replaced the previous mode-selection chat flow with a unified chat interface. Users no longer need to manually choose between analysis, evidence, and SQL modes before asking a question. Instead, the backend detects the user intent and routes each question to the appropriate handler.
 
 ## Key Work
 
@@ -16,10 +16,10 @@ The pipeline now provides a single chat experience across CLI and Web UI. Users 
 
 ## Before and After
 
-Before this task, users had to manually choose the chat mode to understand pipeline results.
+Before this feature, users had to manually choose the chat mode to understand pipeline results.
 
-![Task 1 before chatbot integration](../assets/task1/task1_before.png)
+![Feature 1 before chatbot integration](../assets/task1/task1_before.png)
 
-After this task, users can ask questions through a unified chat interface, and the system routes each question to the appropriate chat mode.
+After this feature, users can ask questions through a unified chat interface, and the system routes each question to the appropriate chat mode.
 
-![Task 1 after chatbot integration](../assets/task1/task1_after.png)
+![Feature 1 after chatbot integration](../assets/task1/task1_after.png)

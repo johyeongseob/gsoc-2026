@@ -1,4 +1,4 @@
-# Task 3b - Dataset A1: Solar Panel Defects
+# Feature 3b - Dataset A1: Solar Panel Defects
 
 The Solar Panel Defects use case detects defects in single-channel electroluminescence images of solar cells.
 
@@ -6,7 +6,7 @@ The Solar Panel Defects use case detects defects in single-channel electrolumine
 
 - PVEL-AD solar cell anomaly detection dataset
 - Modality: single-channel electroluminescence images
-- Task: object detection
+- Feature: object detection
 - Test set: 19,150 images with XML bounding-box annotations
 - Source: [PVEL-AD](https://github.com/binyisu/PVEL-AD)
 
@@ -43,4 +43,4 @@ The Solar Panel Defects use case detects defects in single-channel electrolumine
 
 The Solar Panel Defects use case was validated through OpenVINO object detection, JSONL and SQLite storage, agent-generated analysis and evidence reports, and CLI and Web UI chat queries.
 
-![Task 3b Solar Panel Defects result](../assets/task3/task3b-solar-panel-defect.png)
+![Feature 3b Solar Panel Defects result](../assets/task3/task3b-solar-panel-defect.png)

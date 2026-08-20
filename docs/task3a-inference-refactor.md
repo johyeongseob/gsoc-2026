@@ -1,6 +1,6 @@
-# Task 3a: Inference Dispatcher Refactoring
+# Feature 3a: Inference Dispatcher Refactoring
 
-This task refactored the inference execution flow so `run_inference_oep.py` became a thin CLI entry point instead of containing most of the inference, output, and configuration logic directly.
+This feature refactored the inference execution flow so `run_inference_oep.py` became a thin CLI entry point instead of containing most of the inference, output, and configuration logic directly.
 
 ## Key Work
 
@@ -27,4 +27,4 @@ This task refactored the inference execution flow so `run_inference_oep.py` beca
 
 ## Result
 
-The inference pipeline became easier to extend and maintain. New use cases can now be added through config files, handler modules, and scaffolded use-case folders instead of repeatedly modifying one large inference script. The refactor also made later Task 3b work safer because new dataset-specific logic can be added in focused modules.
+The inference pipeline became easier to extend and maintain. New use cases can now be added through config files, handler modules, and scaffolded use-case folders instead of repeatedly modifying one large inference script. The refactor also made later Feature 3b work safer because new dataset-specific logic can be added in focused modules.

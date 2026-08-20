@@ -1,6 +1,6 @@
-# Task 2: Original Input Data Schema and Agent Support
+# Feature 2: Original Input Data Schema and Agent Support
 
-This task extended the database and agent layer so the pipeline can store original input data together with inference results. This makes the results easier to query, analyze, and explain through SQL and agents.
+This feature extended the database and agent layer so the pipeline can store original input data together with inference results. This makes the results easier to query, analyze, and explain through SQL and agents.
 
 ## Key Work
 
@@ -14,20 +14,20 @@ This task extended the database and agent layer so the pipeline can store origin
 
 ## Result
 
-![Task 2 input schema flow](../assets/task2/task2.png)
+![Feature 2 input schema flow](../assets/task2/task2.png)
 
 The pipeline can now preserve more context for each prediction. Instead of storing only final labels and confidence scores, the database can also keep original input data and modality-specific confidence values. This allows users to ask more detailed natural-language questions and enables agents to produce more informative analysis reports.
 
 
 ## Example
 
-Before this task, a result row mainly represented the final prediction:
+Before this feature, a result row mainly represented the final prediction:
 
 ```text
 source, label, confidence
 ```
 
-After this task, a result row can also include original input data and modality-specific confidence information:
+After this feature, a result row can also include original input data and modality-specific confidence information:
 
 ```text
 source, label, confidence, sensor_raw_json, image_confidence, sensor_confidence
