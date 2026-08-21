@@ -37,4 +37,4 @@ The Oil and Gas Pipeline use case uses tabular sensor data to predict pipeline c
 
 The Oil and Gas Pipeline use case was validated through inference output, SQLite storage, agent summaries, and corrosion-specific chat routing.
 
-![Feature 4 Oil and Gas Pipeline result](../assets/task3/task3b-oil-gas-pipeline.png)
+![Feature 4 Oil and Gas Pipeline result](../assets/feature4/feature4-oil-gas-pipeline.png)

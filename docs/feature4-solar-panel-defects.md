@@ -43,4 +43,4 @@ The Solar Panel Defects use case detects defects in single-channel electrolumine
 
 The Solar Panel Defects use case was validated through OpenVINO object detection, JSONL and SQLite storage, agent-generated analysis and evidence reports, and CLI and Web UI chat queries.
 
-![Feature 4 Solar Panel Defects result](../assets/task3/task3b-solar-panel-defect.png)
+![Feature 4 Solar Panel Defects result](../assets/feature4/feature4-solar-panel-defects.png)

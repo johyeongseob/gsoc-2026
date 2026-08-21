@@ -18,8 +18,8 @@ The pipeline now provides a single chat experience across CLI and Web UI. Users 
 
 Before this feature, users had to manually choose the chat mode to understand pipeline results.
 
-![Feature 1 before chatbot integration](../assets/task1/task1_before.png)
+![Feature 1 before chatbot integration](../assets/feature1/feature1-before.png)
 
 After this feature, users can ask questions through a unified chat interface, and the system routes each question to the appropriate chat mode.
 
-![Feature 1 after chatbot integration](../assets/task1/task1_after.png)
+![Feature 1 after chatbot integration](../assets/feature1/feature1-after.png)

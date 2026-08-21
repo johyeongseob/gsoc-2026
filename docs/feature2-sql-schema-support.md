@@ -14,7 +14,7 @@ This feature extended the database and agent layer so the pipeline can store ori
 
 ## Result
 
-![Feature 2 input schema flow](../assets/task2/task2.png)
+![Feature 2 SQL schema flow](../assets/feature2/feature2-sql-schema-support.png)
 
 The pipeline can now preserve more context for each prediction. Instead of storing only final labels and confidence scores, the database can also keep original input data and modality-specific confidence values. This allows users to ask more detailed natural-language questions and enables agents to produce more informative analysis reports.
 
