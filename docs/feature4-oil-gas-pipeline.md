@@ -1,4 +1,4 @@
-# Feature 3b - Dataset E: Oil and Gas Pipeline
+# Feature 4: Oil and Gas Pipeline
 
 The Oil and Gas Pipeline use case uses tabular sensor data to predict pipeline condition and thickness loss.
 
@@ -37,4 +37,4 @@ The Oil and Gas Pipeline use case uses tabular sensor data to predict pipeline c
 
 The Oil and Gas Pipeline use case was validated through inference output, SQLite storage, agent summaries, and corrosion-specific chat routing.
 
-![Feature 3b Oil and Gas Pipeline result](../assets/task3/task3b-oil-gas-pipeline.png)
+![Feature 4 Oil and Gas Pipeline result](../assets/task3/task3b-oil-gas-pipeline.png)

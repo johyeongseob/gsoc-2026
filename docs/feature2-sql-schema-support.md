@@ -1,4 +1,4 @@
-# Feature 2: Original Input Data Schema and Agent Support
+# Feature 2: SQL Schema Support
 
 This feature extended the database and agent layer so the pipeline can store original input data together with inference results. This makes the results easier to query, analyze, and explain through SQL and agents.
 
@@ -38,6 +38,3 @@ This richer schema helps answer questions such as:
 - Which samples had high sensor confidence?
 - Which predictions relied more on image information?
 - Which raw input values may explain the final prediction?
-
-
-
