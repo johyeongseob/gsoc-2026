@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="400" viewBox="0 80 1400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing Maintenance processing flow</title>
+  <desc id="desc">Audio and text inputs pass through preprocessing and separate MLP branches before their scores are combined by late fusion.</desc>
+  <defs>
+    <style>
+      .label { font: 700 18px Arial, sans-serif; fill: #111; }
+      .detail { font: 15px Arial, sans-serif; fill: #333; }
+      .box { fill: #e5e7eb; stroke: #4b5563; stroke-width: 2.5; }
+      .arrow { fill: none; stroke: #6b7280; stroke-width: 2.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="45" y="125" width="175" height="90" class="box"/>
+  <text x="132" y="162" text-anchor="middle" class="label">MP4 audio</text>
+  <text x="132" y="190" text-anchor="middle" class="detail">Raw clip</text>
+  <path d="M220 170 H270" class="arrow"/>
+
+  <rect x="275" y="125" width="210" height="90" class="box"/>
+  <text x="380" y="158" text-anchor="middle" class="label">Audio features</text>
+  <text x="380" y="185" text-anchor="middle" class="detail">MFCC + spectral</text>
+  <path d="M485 170 H535" class="arrow"/>
+
+  <rect x="540" y="125" width="175" height="90" class="box"/>
+  <text x="627" y="158" text-anchor="middle" class="label">Scaler</text>
+  <text x="627" y="185" text-anchor="middle" class="detail">30D vector</text>
+  <path d="M715 170 H765" class="arrow"/>
+
+  <rect x="770" y="125" width="175" height="90" class="box"/>
+  <text x="857" y="162" text-anchor="middle" class="label">Audio MLP</text>
+  <text x="857" y="190" text-anchor="middle" class="detail">5 scores</text>
+
+  <rect x="45" y="345" width="175" height="90" class="box"/>
+  <text x="132" y="382" text-anchor="middle" class="label">Caption</text>
+  <text x="132" y="410" text-anchor="middle" class="detail">Raw text</text>
+  <path d="M220 390 H270" class="arrow"/>
+
+  <rect x="275" y="345" width="210" height="90" class="box"/>
+  <text x="380" y="382" text-anchor="middle" class="label">TF-IDF</text>
+  <text x="380" y="410" text-anchor="middle" class="detail">Fitted vectorizer</text>
+  <path d="M485 390 H535" class="arrow"/>
+
+  <rect x="540" y="345" width="175" height="90" class="box"/>
+  <text x="627" y="382" text-anchor="middle" class="label">Text features</text>
+  <text x="627" y="410" text-anchor="middle" class="detail">128D vector</text>
+  <path d="M715 390 H765" class="arrow"/>
+
+  <rect x="770" y="345" width="175" height="90" class="box"/>
+  <text x="857" y="382" text-anchor="middle" class="label">Text MLP</text>
+  <text x="857" y="410" text-anchor="middle" class="detail">5 scores</text>
+
+  <path d="M945 170 H995 L1055 230" class="arrow"/>
+  <path d="M945 390 H995 L1055 330" class="arrow"/>
+  <polygon points="1120,210 1210,280 1120,350 1030,280" class="box"/>
+  <text x="1120" y="274" text-anchor="middle" class="label">Late fusion</text>
+  <text x="1120" y="300" text-anchor="middle" class="detail">0.5 + 0.5</text>
+
+  <path d="M1210 280 H1250" class="arrow"/>
+  <rect x="1255" y="235" width="110" height="90" class="box"/>
+  <text x="1310" y="272" text-anchor="middle" class="label">Output</text>
+  <text x="1310" y="300" text-anchor="middle" class="detail">Class</text>
+
+</svg>
