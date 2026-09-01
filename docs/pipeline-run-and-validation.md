@@ -20,7 +20,16 @@ python run_inference_oep.py --config config/oil_gas_pipeline/config.yaml
 
 This verifies that the selected model and handler run successfully and that inference outputs are written to JSONL and SQLite.
 
+> **NPU note:** OpenVINO detected the Intel NPU, and pipeline inference
+> completed successfully on the NPU with outputs written to JSONL and SQLite.
+
 ## Agent Orchestration Validation
+
+The LangGraph workflow follows a hub-and-spoke design. Meta-agent nodes
+coordinate the policy, analysis, and evidence agents, while the generated
+artifacts and SQLite records support chat queries and ticket generation.
+
+![Agent orchestration and chat architecture](../assets/pipeline-run-and-validation/agent-orchestration.svg)
 
 Agent orchestration can be run after inference outputs are available:
 
