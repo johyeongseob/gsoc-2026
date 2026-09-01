@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img" aria-labelledby="title desc">
+  <title id="title">Feature 3 inference dispatcher refactoring</title>
+  <desc id="desc">Before Feature 3, a single run_inference_oep script handled the full pipeline. After refactoring, configuration, execution, dispatch, handlers, and output writing are separate components.</desc>
+  <defs>
+    <style>
+      .phase { fill: #4b5563; stroke: #374151; stroke-width: 2.5; }
+      .phaseText { font: 700 18px Arial, sans-serif; fill: #fff; }
+      .box { fill: #e5e7eb; stroke: #4b5563; stroke-width: 2.5; }
+      .diamond { fill: #d1d5db; stroke: #4b5563; stroke-width: 2.5; }
+      .label { font: 700 17px Arial, sans-serif; fill: #111; }
+      .detail { font: 14px Arial, sans-serif; fill: #333; }
+      .code { font: 700 16px Consolas, monospace; fill: #111; }
+      .arrow { fill: none; stroke: #6b7280; stroke-width: 2.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <rect x="35" y="75" width="120" height="70" class="phase"/>
+  <text x="95" y="117" text-anchor="middle" class="phaseText">Before</text>
+  <rect x="210" y="65" width="155" height="90" class="box"/>
+  <text x="287" y="105" text-anchor="middle" class="label">Input</text>
+  <text x="287" y="132" text-anchor="middle" class="detail">Data + options</text>
+  <path d="M365 110 H430" class="arrow"/>
+  <rect x="435" y="45" width="435" height="130" class="box"/>
+  <text x="652" y="88" text-anchor="middle" class="code">run_inference_oep.py</text>
+  <text x="652" y="120" text-anchor="middle" class="detail">CLI · config · inference · output writing</text>
+  <text x="652" y="146" text-anchor="middle" class="detail">Use-case logic concentrated in one flow</text>
+  <path d="M870 110 H935" class="arrow"/>
+  <rect x="940" y="65" width="190" height="90" class="box"/>
+  <text x="1035" y="105" text-anchor="middle" class="label">Output</text>
+  <text x="1035" y="132" text-anchor="middle" class="detail">Files + database</text>
+
+  <rect x="35" y="330" width="120" height="70" class="phase"/>
+  <text x="95" y="372" text-anchor="middle" class="phaseText">After</text>
+  <rect x="180" y="320" width="145" height="90" class="box"/>
+  <text x="252" y="360" text-anchor="middle" class="label">Input</text>
+  <text x="252" y="387" text-anchor="middle" class="detail">Data + config</text>
+  <path d="M325 365 H360" class="arrow"/>
+  <rect x="365" y="320" width="170" height="90" class="box"/>
+  <text x="450" y="358" text-anchor="middle" class="label">Config Builder</text>
+  <text x="450" y="386" text-anchor="middle" class="detail">Runtime config</text>
+  <path d="M535 365 H570" class="arrow"/>
+  <rect x="575" y="320" width="150" height="90" class="box"/>
+  <text x="650" y="358" text-anchor="middle" class="label">Runner</text>
+  <text x="650" y="386" text-anchor="middle" class="detail">Execution flow</text>
+  <path d="M725 365 H755" class="arrow"/>
+  <polygon points="825,305 900,365 825,425 750,365" class="diamond"/>
+  <text x="825" y="360" text-anchor="middle" class="label">Dispatcher</text>
+  <text x="825" y="385" text-anchor="middle" class="detail">Select</text>
+  <path d="M900 365 H930" class="arrow"/>
+  <rect x="935" y="305" width="190" height="120" class="box"/>
+  <text x="1030" y="340" text-anchor="middle" class="label">Handler</text>
+  <text x="1030" y="370" text-anchor="middle" class="detail">Image · Sensor</text>
+  <text x="1030" y="395" text-anchor="middle" class="detail">Multimodal</text>
+  <path d="M1125 365 H1155" class="arrow"/>
+  <rect x="1160" y="320" width="170" height="90" class="box"/>
+  <text x="1245" y="358" text-anchor="middle" class="label">Output Writer</text>
+  <text x="1245" y="386" text-anchor="middle" class="detail">JSONL · SQLite · Viz</text>
+</svg>

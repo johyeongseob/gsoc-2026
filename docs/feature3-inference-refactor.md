@@ -2,6 +2,13 @@
 
 This feature refactored the inference execution flow so `run_inference_oep.py` became a thin CLI entry point instead of containing most of the inference, output, and configuration logic directly.
 
+## Architecture
+
+The refactor separated the original monolithic inference flow into reusable
+configuration, execution, dispatch, handler, and output-writing components.
+
+![Feature 3 inference dispatcher refactoring](../assets/feature3/inference-dispatcher-refactor.svg)
+
 ## Key Work
 
 - Added an inference handler interface and handler registry.
