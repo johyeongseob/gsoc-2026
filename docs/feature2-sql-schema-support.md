@@ -1,22 +1,20 @@
 # Feature 2: SQL Schema Support
 
-This feature extended the database and agent layer so the pipeline can store original input data together with inference results. This makes the results easier to query, analyze, and explain through SQL and agents.
+This feature extended the existing database and agent layer to store raw sensor readings alongside inference results. This enables sensor-aware SQL queries, policy decisions, and analysis reports.
 
 ## Key Work
 
-- Extended the configurable SQLite schema to support original input data and modality-specific metadata.
-- Added support for storing raw input information together with prediction outputs.
-- Added confidence fields that separate model-specific signals, such as image confidence and sensor confidence.
-- Updated the SQL schema description so natural-language SQL queries can understand the new columns.
-- Updated the policy and analysis layers so agent reports can use the added input and confidence information.
-- Added tests to verify schema updates, SQL querying, and agent behavior.
+- Extended the configurable SQLite schema with raw sensor readings, modality-specific metadata, and confidence fields.
+- Updated the SQL schema description to support natural-language queries over sensor fields.
+- Updated the policy and analysis layers to use sensor values and modality-specific confidence information.
+- Added schema backfilling and tests for SQL queries and sensor-aware agent behavior.
 
 
 ## Result
 
 ![Feature 2 SQL schema flow](../assets/feature2/feature2-sql-schema-support.png)
 
-The pipeline can now preserve more context for each prediction. Instead of storing only final labels and confidence scores, the database can also keep original input data and modality-specific confidence values. This allows users to ask more detailed natural-language questions and enables agents to produce more informative analysis reports.
+The pipeline can now preserve sensor context for each prediction. Alongside labels and confidence scores, the database can store raw sensor readings and modality-specific confidence values. This enables more detailed natural-language queries and sensor-aware agent reports.
 
 
 ## Example
@@ -27,7 +25,7 @@ Before this feature, a result row mainly represented the final prediction:
 source, label, confidence
 ```
 
-After this feature, a result row can also include original input data and modality-specific confidence information:
+After this feature, a result row can also include raw sensor readings and modality-specific confidence information:
 
 ```text
 source, label, confidence, sensor_raw_json, image_confidence, sensor_confidence
@@ -36,5 +34,5 @@ source, label, confidence, sensor_raw_json, image_confidence, sensor_confidence
 This richer schema helps answer questions such as:
 
 - Which samples had high sensor confidence?
-- Which predictions relied more on image information?
-- Which raw input values may explain the final prediction?
+- Which samples had higher image confidence than sensor confidence?
+- Which raw sensor values may help explain the final prediction?
