@@ -10,6 +10,14 @@ The Solar Panel Defects use case detects defects in single-channel electrolumine
 - Test set: 19,150 images with XML bounding-box annotations
 - Source: [PVEL-AD](https://github.com/binyisu/PVEL-AD)
 
+### Representative sample
+
+The sample below is a single-channel electroluminescence image from the
+dataset. The red bounding box shows the ground-truth annotation for a
+`star_crack` defect.
+
+![PVEL-AD star crack sample with a red ground-truth bounding box](../assets/feature4/solar-panel-defects/dataset-sample-star-crack.jpg)
+
 ## Model
 
 - YOLO-style object detection model exported to OpenVINO IR
@@ -43,4 +51,4 @@ The Solar Panel Defects use case detects defects in single-channel electrolumine
 
 The Solar Panel Defects use case was validated through OpenVINO object detection, JSONL and SQLite storage, agent-generated analysis and evidence reports, and CLI and Web UI chat queries.
 
-![Feature 4 Solar Panel Defects result](../assets/feature4/feature4-solar-panel-defects.png)
+![Feature 4 Solar Panel Defects result](../assets/feature4/solar-panel-defects/feature4-solar-panel-defects.png)
