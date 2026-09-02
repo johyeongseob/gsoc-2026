@@ -53,7 +53,7 @@ The inference models listed below were deployed in OpenVINO IR format.
 - Feature 4 - Oil and Gas Pipeline: [PR #6](https://github.com/intel/predictive-maintenance-pipeline/pull/6)
 - Feature 4 - Solar Panel Defects: [PR #8](https://github.com/intel/predictive-maintenance-pipeline/pull/8)
 - Feature 4 - Power Transmission Inspection: [PR #9](https://github.com/intel/predictive-maintenance-pipeline/pull/9)
-- Feature 4 - Manufacturing Maintenance and Water Treatment: PR pending
+- Feature 4 - Manufacturing Maintenance and Water Treatment: [PR #10](https://github.com/intel/predictive-maintenance-pipeline/pull/10)
 
 ## Testing and Validation
 Detailed validation commands and examples are available in [Pipeline Run and Validation](docs/pipeline-run-and-validation.md).
