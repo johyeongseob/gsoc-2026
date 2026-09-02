@@ -46,6 +46,13 @@ The bold value is the ground-truth label used to evaluate the classifier. The
 sample remains in MP4 format because audio is a model input; converting it to a
 GIF would remove the sound.
 
+## Inference Flow
+
+The complete inference flow transforms the paired raw inputs, runs the audio
+and text model branches, and combines their class scores through late fusion.
+
+![Manufacturing Maintenance inference flow](../assets/feature4/manufacturing-maintenance/inference-flow.svg)
+
 ## Preprocessing
 
 Preprocessing is an essential part of this use case because the OpenVINO
@@ -95,13 +102,6 @@ OpenVINO and combines their outputs through late fusion.
 
 The default fusion weights are `0.5` for audio and `0.5` for text. The weighted
 branch scores are combined before the final class and confidence are selected.
-
-## Inference Flow
-
-The complete inference flow transforms the paired raw inputs, runs the audio
-and text model branches, and combines their class scores through late fusion.
-
-![Manufacturing Maintenance inference flow](../assets/feature4/manufacturing-maintenance/inference-flow.svg)
 
 ## Key Work
 

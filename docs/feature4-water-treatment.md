@@ -49,6 +49,14 @@ displayed JPEG is a three-channel preview of the original 15-channel NumPy
 raster patch; it is not the raw model input or necessarily calibrated natural
 color.
 
+## Inference Flow
+
+The complete inference flow converts both raw inputs into model-compatible
+features, executes the two OpenVINO branches, and combines their scores through
+late fusion.
+
+![Water Treatment inference flow](../assets/feature4/water-treatment/inference-flow.svg)
+
 ## Preprocessing
 
 Preprocessing is required because the OpenVINO models consume fixed-length
@@ -97,14 +105,6 @@ The originally supplied OpenVINO files did not include the fitted scaler and
 TF-IDF vectorizer required to reproduce their input preprocessing. A complete,
 matching model and preprocessing set was therefore trained from scratch on the
 curated Arizona subset. This was not fine-tuning of the supplied model.
-
-## Inference Flow
-
-The complete inference flow converts both raw inputs into model-compatible
-features, executes the two OpenVINO branches, and combines their scores through
-late fusion.
-
-![Water Treatment inference flow](../assets/feature4/water-treatment/inference-flow.svg)
 
 ## Key Work
 

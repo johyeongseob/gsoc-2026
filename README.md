@@ -63,4 +63,6 @@ Detailed validation commands and examples are available in [Pipeline Run and Val
 
 ## Final Submission Note
 
-This repository is intended as the public GSoC final project summary. It links to the upstream pull requests and summarizes what was implemented, validated, and left for future work.
+This repository serves as the public GSoC final project summary. All planned
+GSoC tasks were completed and validated, and their implementations are
+documented here with links to the corresponding upstream pull requests.
