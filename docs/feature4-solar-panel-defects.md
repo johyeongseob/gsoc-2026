@@ -16,7 +16,9 @@ The sample below is a single-channel electroluminescence image from the
 dataset. The red bounding box shows the ground-truth annotation for a
 `star_crack` defect.
 
-![PVEL-AD star crack sample with a red ground-truth bounding box](../assets/feature4/solar-panel-defects/dataset-sample-star-crack.jpg)
+<p align="center">
+  <img src="../assets/feature4/solar-panel-defects/dataset-sample-star-crack.jpg" alt="PVEL-AD star crack sample with a red ground-truth bounding box" width="400">
+</p>
 
 ## Model
 
