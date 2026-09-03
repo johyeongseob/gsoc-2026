@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7.5" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#222"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#111}.title{font-size:42px;font-weight:700}.sub{font-size:20px;fill:#444}
+      .head{font-size:21px;font-weight:700}.body{font-size:17px;fill:#444}.box{fill:#fff;stroke:#333;stroke-width:1.5}
+      .group{fill:#fff;stroke:#222;stroke-width:1.7}.band{fill:#eee;stroke:#222;stroke-width:1.5}.line{stroke:#222;stroke-width:1.7;fill:none;marker-end:url(#arrow)}.join{stroke:#222;stroke-width:1.7;fill:none}
+    </style>
+  </defs>
+  <rect width="1600" height="760" fill="#fff"/>
+  <text x="800" y="66" text-anchor="middle" class="title">Oil and Gas Pipeline: Sensor Inference</text>
+  <text x="800" y="101" text-anchor="middle" class="sub">Tabular operating data supports condition classification, loss estimation, and corrosion analysis</text>
+  <rect x="55" y="165" width="1490" height="430" class="group"/>
+  <rect x="55" y="165" width="1490" height="55" class="band"/>
+  <text x="800" y="201" text-anchor="middle" class="head">OpenVINO Sensor Pipeline</text>
+  <rect x="95" y="300" width="230" height="125" class="box"/>
+  <text x="210" y="345" text-anchor="middle" class="head">Tabular Record</text>
+  <text x="210" y="378" text-anchor="middle" class="body">dimensions · material</text>
+  <text x="210" y="405" text-anchor="middle" class="body">pressure · corrosion</text>
+  <path d="M325 362 H405" class="line"/>
+  <rect x="405" y="300" width="230" height="125" class="box"/>
+  <text x="520" y="345" text-anchor="middle" class="head">Preprocessing</text>
+  <text x="520" y="378" text-anchor="middle" class="body">encode categories</text>
+  <text x="520" y="405" text-anchor="middle" class="body">scale numeric features</text>
+  <path d="M635 362 H715" class="line"/>
+  <rect x="715" y="300" width="230" height="125" class="box"/>
+  <text x="830" y="345" text-anchor="middle" class="head">Sensor MLP</text>
+  <text x="830" y="378" text-anchor="middle" class="body">OpenVINO inference</text>
+  <text x="830" y="405" text-anchor="middle" class="body">shared feature vector</text>
+  <path d="M945 362 H985 M985 310 V430" class="join"/>
+  <path d="M985 310 H1025" class="line"/>
+  <path d="M985 430 H1025" class="line"/>
+  <rect x="1025" y="265" width="235" height="90" class="box"/>
+  <text x="1142" y="305" text-anchor="middle" class="head">Classification</text>
+  <text x="1142" y="335" text-anchor="middle" class="body">pipeline condition</text>
+  <rect x="1025" y="385" width="235" height="90" class="box"/>
+  <text x="1142" y="425" text-anchor="middle" class="head">Regression</text>
+  <text x="1142" y="455" text-anchor="middle" class="body">thickness loss</text>
+  <path d="M1260 310 H1290 V362 M1260 430 H1290 V362" class="join"/>
+  <path d="M1290 362 H1318" class="line"/>
+  <rect x="1330" y="300" width="175" height="125" class="band"/>
+  <text x="1418" y="345" text-anchor="middle" class="head">Evidence</text>
+  <text x="1418" y="378" text-anchor="middle" class="body">raw values</text>
+  <text x="1418" y="405" text-anchor="middle" class="body">corrosion report</text>
+  <rect x="390" y="640" width="820" height="58" class="band"/>
+  <text x="800" y="677" text-anchor="middle" class="head">Predictions and source measurements remain linked for downstream agents</text>
+</svg>

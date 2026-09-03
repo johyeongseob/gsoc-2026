@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic AI Predictive Maintenance System Architecture</title>
+  <desc id="desc">Industrial data is routed to a selected handler for preprocessing and inference, stored in JSONL and SQLite, analyzed by coordinated agents, and exposed through chat, reports, and tickets.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#222"/></marker>
+    <style>
+      .title{font:700 43px Arial,sans-serif;fill:#111}.subtitle{font:400 20px Arial,sans-serif;fill:#555}
+      .group{fill:#fff;stroke:#222;stroke-width:2}.band{fill:#f2f2f2;stroke:#222;stroke-width:1.6}
+      .module{fill:#fff;stroke:#555;stroke-width:1.5}.moduleAlt{fill:#ededed;stroke:#555;stroke-width:1.5}
+      .gtitle{font:700 21px Arial,sans-serif;fill:#111}.label{font:700 18px Arial,sans-serif;fill:#111}
+      .detail{font:400 15px Arial,sans-serif;fill:#555}.tiny{font:600 14px Arial,sans-serif;fill:#333}
+      .flow{fill:none;stroke:#222;stroke-width:2.2;marker-end:url(#arrow)}.dash{fill:none;stroke:#777;stroke-width:1.6;stroke-dasharray:7 5;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fff"/>
+  <text x="800" y="64" text-anchor="middle" class="title">Agentic AI Predictive Maintenance System</text>
+  <text x="800" y="96" text-anchor="middle" class="subtitle">GSoC 2026 · Intel Metro AI Suite · OpenVINO</text>
+  <rect x="585" y="119" width="18" height="18" class="moduleAlt"/>
+  <text x="615" y="133" class="detail">Gray: shared control, execution, or stored state</text>
+
+  <!-- Input modalities -->
+  <rect x="42" y="155" width="205" height="505" class="group"/>
+  <rect x="42" y="155" width="205" height="48" class="band"/>
+  <text x="145" y="187" text-anchor="middle" class="gtitle">Industrial Inputs</text>
+  <g text-anchor="middle">
+    <rect x="72" y="240" width="145" height="58" class="module"/><text x="145" y="275" class="label">Images</text>
+    <rect x="72" y="322" width="145" height="58" class="module"/><text x="145" y="357" class="label">Sensors</text>
+    <rect x="72" y="404" width="145" height="58" class="module"/><text x="145" y="439" class="label">Audio</text>
+    <rect x="72" y="486" width="145" height="58" class="module"/><text x="145" y="521" class="label">Text</text>
+    <rect x="72" y="569" width="145" height="58" class="module"/><text x="145" y="604" class="label">Raster</text>
+  </g>
+
+  <!-- Config and dispatch -->
+  <rect x="305" y="155" width="235" height="505" class="group"/>
+  <rect x="305" y="155" width="235" height="48" class="band"/>
+  <text x="423" y="187" text-anchor="middle" class="gtitle">Routing Layer</text>
+  <rect x="320" y="240" width="205" height="82" class="moduleAlt"/>
+  <text x="423" y="274" text-anchor="middle" class="label">Use-case Config</text><text x="423" y="300" text-anchor="middle" class="detail">model · modality · schema</text>
+  <rect x="320" y="393" width="205" height="82" class="module"/>
+  <text x="423" y="427" text-anchor="middle" class="label">Dispatcher</text><text x="423" y="453" text-anchor="middle" class="detail">select handler</text>
+  <rect x="320" y="545" width="205" height="82" class="module"/>
+  <text x="423" y="579" text-anchor="middle" class="label">Selected Handler</text><text x="423" y="605" text-anchor="middle" class="detail">preprocessing · inference</text>
+  <path d="M423 322V393" class="flow"/><path d="M423 475V545" class="flow"/>
+
+  <!-- OpenVINO inference -->
+  <rect x="598" y="155" width="310" height="505" class="group"/>
+  <rect x="598" y="155" width="310" height="48" class="band"/>
+  <text x="753" y="187" text-anchor="middle" class="gtitle">OpenVINO Inference</text>
+  <text x="753" y="233" text-anchor="middle" class="detail">Handler registry</text>
+  <g text-anchor="middle">
+    <rect x="630" y="240" width="246" height="52" class="module"/><text x="753" y="272" class="tiny">Detection / Classification</text>
+    <rect x="630" y="326" width="246" height="52" class="module"/><text x="753" y="358" class="tiny">Sensor Prediction</text>
+    <rect x="630" y="412" width="246" height="52" class="module"/><text x="753" y="444" class="tiny">Audio–Text Late Fusion</text>
+    <rect x="630" y="498" width="246" height="52" class="module"/><text x="753" y="530" class="tiny">Raster–Text Late Fusion</text>
+  </g>
+  <rect x="630" y="563" width="246" height="64" class="moduleAlt"/>
+  <text x="753" y="588" text-anchor="middle" class="label">Intel Devices</text><text x="753" y="613" text-anchor="middle" class="detail">CPU · GPU · NPU</text>
+
+  <!-- Data and agents -->
+  <rect x="966" y="155" width="270" height="505" class="group"/>
+  <rect x="966" y="155" width="270" height="48" class="band"/>
+  <text x="1101" y="187" text-anchor="middle" class="gtitle">Evidence &amp; Agents</text>
+  <rect x="998" y="240" width="206" height="78" class="moduleAlt"/>
+  <text x="1101" y="272" text-anchor="middle" class="label">Result Store</text><text x="1101" y="298" text-anchor="middle" class="detail">JSONL · SQLite</text>
+  <rect x="998" y="357" width="206" height="72" class="module"/>
+  <text x="1101" y="387" text-anchor="middle" class="label">Policy Agent</text><text x="1101" y="412" text-anchor="middle" class="detail">filter and prioritize</text>
+  <rect x="998" y="456" width="206" height="72" class="module"/>
+  <text x="1101" y="486" text-anchor="middle" class="label">Analysis Agent</text><text x="1101" y="511" text-anchor="middle" class="detail">interpret results</text>
+  <rect x="998" y="555" width="206" height="72" class="module"/>
+  <text x="1101" y="585" text-anchor="middle" class="label">Evidence Agent</text><text x="1101" y="610" text-anchor="middle" class="detail">trace supporting data</text>
+  <path d="M1101 318V357" class="flow"/><path d="M1101 429V456" class="flow"/><path d="M1101 528V555" class="flow"/>
+
+  <!-- User layer -->
+  <rect x="1294" y="155" width="264" height="505" class="group"/>
+  <rect x="1294" y="155" width="264" height="48" class="band"/>
+  <text x="1426" y="187" text-anchor="middle" class="gtitle">User Experience</text>
+  <g text-anchor="middle">
+    <rect x="1330" y="240" width="192" height="70" class="module"/><text x="1426" y="271" class="label">Unified Chat</text><text x="1426" y="295" class="detail">intent routing</text>
+    <rect x="1330" y="346" width="192" height="70" class="module"/><text x="1426" y="387" class="label">Agent Reports</text>
+    <rect x="1330" y="452" width="192" height="70" class="module"/><text x="1426" y="493" class="label">SQL Questions</text>
+    <rect x="1330" y="557" width="192" height="70" class="module"/><text x="1426" y="588" class="label">Tickets</text><text x="1426" y="612" class="detail">preview + evidence</text>
+  </g>
+
+  <!-- Main flow -->
+  <path d="M247 407H305" class="flow"/><path d="M540 407H598" class="flow"/><path d="M908 407H966" class="flow"/><path d="M1236 407H1294" class="flow"/>
+  <path d="M1426 660V728H1101V660" class="dash"/>
+  <text x="1264" y="758" text-anchor="middle" class="detail">Questions and selected evidence reference stored inference results</text>
+
+  <!-- Contribution strip -->
+  <rect x="42" y="800" width="1516" height="58" class="band"/>
+  <text x="800" y="836" text-anchor="middle" class="tiny">Unified chat  ·  sensor-aware SQL  ·  modular inference dispatcher  ·  five new industrial use cases</text>
+</svg>
