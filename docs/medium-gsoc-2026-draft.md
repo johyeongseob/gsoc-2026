@@ -1,6 +1,8 @@
-# Building an Agentic AI Predictive Maintenance Pipeline with OpenVINO
+# Building an Agentic AI Predictive Maintenance Pipeline with Intel® OpenVINO and Intel® Metro AI Suite
 
-The opening figure summarizes the complete system at a glance: industrial inputs become predictions, evidence, and maintenance actions.
+Critical infrastructure (pipelines, utilities, and assets) requires continuous inspection to prevent failures, leaks, and safety incidents. Traditional maintenance is reactive or scheduled, costing several truck rolls, missing early defect signals and generating fragmented evidence for audits. Agentic AI enables continuous, autonomous oversight of critical infrastructure and assets and proactive maintenance. This saves truck roll cost, reduces downtime, improves safety, and provides audit-ready operation.
+
+This [GSoC project](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT) leverages Intel® Metro AI Suite **[blueprints](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/ai-suite-metro/app-blueprint-predictive-maintenance.html)** on agentic predictive maintenance powered by Intel® OpenVINO and provided feature expansions and introduced additional use cases through a set of new data sets.
 
 ![Agentic AI for Predictive Maintenance](../assets/medium/01-hero.png)
 
@@ -14,13 +16,13 @@ Hello, my name is Hyeongseob Jo. I hold a master's degree, and my graduate resea
 
 Predictive-maintenance models can produce thousands of predictions, but an operator still needs answers: **What happened? Why did it happen? What should I inspect next?**
 
-During Google Summer of Code 2026, I extended the Intel Metro AI Suite Predictive Maintenance Pipeline using OpenVINO. The result connects inference, structured storage, AI agents, natural-language questions, and maintenance evidence in one workflow.
+During Google Summer of Code 2026, I extended the Intel Metro AI Suite Predictive Maintenance Blueprint using OpenVINO. The result connects inference, structured storage, AI agents, natural-language questions, and maintenance evidence in one workflow.
 
 **Keywords:** predictive maintenance, agentic AI, OpenVINO, multimodal inference, Intel hardware, Google Summer of Code
 
 ## 1. Introduction: From Predictions to Maintenance Decisions
 
-Industrial AI systems need more than isolated model predictions. A practical pipeline must preserve the evidence behind each result, support different input modalities, and help users investigate outputs without requiring detailed knowledge of the underlying implementation.
+Critical Infrastructure AI systems need more than isolated model predictions. A practical pipeline must preserve the evidence behind each result, support different input modalities, and help users investigate outputs without requiring detailed knowledge of the underlying implementation.
 
 My GSoC project addressed this gap by improving both the user experience and the internal architecture of an existing predictive-maintenance blueprint. The work connected model inference with structured storage, coordinated AI agents, natural-language interaction, and evidence-based ticket generation.
 
@@ -30,7 +32,7 @@ The upstream repository provided the foundation that I extended throughout the p
   <img src="../assets/medium/12-upstream-repository.png" alt="Intel Predictive Maintenance Pipeline GitHub repository" width="800">
 </p>
 
-*Figure 2. The Intel Predictive Maintenance Pipeline GitHub repository, which served as the upstream project for this work.*
+*Figure 2. Intel® Metro AI Predictive Maintenance Blueprint GitHub repository, which served as the upstream project for this work.*
 
 The repository combines OpenVINO inference, structured storage, and agent orchestration in an edge AI predictive-maintenance blueprint.
 
@@ -172,7 +174,9 @@ The two domains test whether the same classifier can handle rendered circuit vie
 
 Both image sources use identical preprocessing and inference stages to produce a circuit-condition class.
 
-### 4.4 Manufacturing Maintenance: Combining Audio and Text
+### 4.4 Operational Environment Maintenance: Combining Audio and Text
+
+*(Manufacturing Maintenance in the repository)*
 
 This use case pairs an audio clip with its caption. The audio and text paths are preprocessed separately, classified by two OpenVINO MLP branches, and combined through late fusion.
 
@@ -186,7 +190,7 @@ This use case pairs an audio clip with its caption. The audio and text paths are
 
 The visible frame provides context, while the inference input combines the clip's audio with its text caption.
 
-![Manufacturing Maintenance audio-text inference flow](../assets/medium/06-audio-text-flow.png)
+![Operational Environment Maintenance audio-text inference flow](../assets/medium/06-audio-text-flow.png)
 
 *Figure 16. Audio and text preprocessing, OpenVINO inference, and late fusion.*
 
