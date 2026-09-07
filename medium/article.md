@@ -59,7 +59,7 @@ Each contribution addresses a different gap while remaining part of the same end
 Before this work, users had to choose analysis, evidence, or SQL mode before asking a question.
 
 <p align="center">
-  <img src="../assets/feature1/feature1-before.png" alt="Chat interface before intent routing" width="850">
+  <img src="../assets/feature1/feature1-before.png" alt="Chat interface before intent routing" width="820">
 </p>
 
 *Figure 5. Before intent routing, the user had to understand the internal modes.*
