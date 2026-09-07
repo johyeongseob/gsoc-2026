@@ -21,6 +21,12 @@ The demo shows the unified chat interface providing access to inference results,
 ![Chat system demo](assets/chat_system.gif)
 
 
+## Articles and Presentations
+
+- [Medium article](medium/article.md)
+- [Lightning talk slides](lightning-talk/slides.pptx)
+- [Lightning talk script](lightning-talk/script.md)
+
 ## Work Summary
 
 - [Feature 1: Chatbot Integration](docs/feature1-unified-chat-interface.md) - Added intent routing and a unified chat flow for analysis, evidence, and SQL questions.
