@@ -15,17 +15,18 @@
 This repository summarizes my Google Summer of Code (GSoC) 2026 leveraging Intel Metro AI Suite Predictive Maintenance Pipeline using OpenVINO for AI Inference. The detailed work is organized into features to clearly present each contribution.
 
 
+**Articles and Presentations**
+
+- [Medium article](medium/article.md)
+- [Lightning talk slides](lightning-talk/slides.pdf)
+- [Lightning talk script](lightning-talk/script.md) (Will be edited)
+
+
 ## Demo
 The demo shows the unified chat interface providing access to inference results, agent-generated reports, and database queries across multiple predictive maintenance use cases.
 
 ![Chat system demo](assets/chat_system.gif)
 
-
-## Articles and Presentations
-
-- [Medium article](medium/article.md)
-- [Lightning talk slides](lightning-talk/slides.pptx)
-- [Lightning talk script](lightning-talk/script.md)
 
 ## Work Summary
 
