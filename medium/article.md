@@ -129,7 +129,9 @@ Keeping both predictions linked to the input record allows downstream agents to 
 
 A YOLO-style OpenVINO detector finds defects in single-channel solar-cell electroluminescence images and preserves bounding boxes as evidence.
 
-![Solar-cell star crack with ground-truth bounding box](../assets/feature4/solar-panel-defects/dataset-sample-star-crack.jpg)
+<p align="center">
+  <img src="../assets/feature4/solar-panel-defects/dataset-sample-star-crack.jpg" alt="Solar-cell star crack with ground-truth bounding box" width="512">
+</p>
 
 *Figure 11. The red box marks a ground-truth `star_crack` defect.*
 
@@ -147,11 +149,12 @@ The predicted box is preserved with the class and confidence so users can inspec
 
 A fine-tuned YOLOv8s-cls model classifies synthetic and real-world transmission-line images into three circuit categories. It correctly classified 334 of 348 held-out images, for **0.9598 accuracy**.
 
-![Synthetic power transmission sample](../assets/feature4/power-transmission-inspection/dataset-sample-synthetic-circuito-duplo.jpg)
+<p align="center">
+  <img src="../assets/feature4/power-transmission-inspection/dataset-sample-synthetic-circuito-duplo.jpg" alt="Synthetic power transmission sample" width="400">
+  <img src="../assets/feature4/power-transmission-inspection/dataset-sample-real-circuito-real.jpg" alt="Real-world power transmission sample" width="400">
+</p>
 
-![Real-world power transmission sample](../assets/feature4/power-transmission-inspection/dataset-sample-real-circuito-real.jpg)
-
-*Figure 13. Synthetic and real-world samples from the Power Transmission Line Dataset.*
+*Figure 13. Synthetic (left) and real-world (right) samples from the Power Transmission Line Dataset.*
 
 The two domains test whether the same classifier can handle rendered circuit views and field inspection images.
 
@@ -167,7 +170,9 @@ Both image sources use identical preprocessing and inference stages to produce a
 
 This use case pairs an audio clip with its caption. The audio and text paths are preprocessed separately, classified by two OpenVINO MLP branches, and combined through late fusion.
 
-![Representative rotating machinery video frame](../assets/feature4/manufacturing-maintenance/dataset-sample-rotating-machinery.png)
+<p align="center">
+  <img src="../assets/feature4/manufacturing-maintenance/dataset-sample-rotating-machinery.png" alt="Representative rotating machinery video frame" width="512">
+</p>
 
 <p align="center"><em>Paired text caption: “A power tool vibrates as it runs.”</em></p>
 
@@ -185,9 +190,11 @@ The two branches remain independently inspectable until their scores are combine
 
 This workflow pairs a 15-channel Sentinel-2 raster patch with an environmental text prompt. Statistical raster features and TF-IDF text features pass through separate OpenVINO branches before late fusion.
 
-![Representative Arizona raster preview](../assets/feature4/water-treatment/dataset-sample-arizona-drip.jpg)
+<p align="center">
+  <img src="../assets/feature4/water-treatment/dataset-sample-arizona-drip.jpg" alt="Representative Arizona raster preview" width="512">
+</p>
 
-<p align="center"><em>Paired environmental prompt (summary): “Cochise County, Arizona. Evapotranspiration: 81.26 mm; precipitation: 0.00 in; groundwater depth: 221.64 ft; surface-water depth: 7.23 ft.”</em></p>
+*Paired environmental prompt (summary): “Cochise County, Arizona. Evapotranspiration: 81.26 mm; precipitation: 0.00 in; groundwater depth: 221.64 ft; surface-water depth: 7.23 ft.”*
 
 *Figure 17. A JPEG preview helps users inspect the sample; the model uses the original multichannel NumPy raster.*
 
@@ -219,19 +226,19 @@ This verifies the integration boundaries as well as the individual model outputs
 
 ## 7. Demo: From Inference Results to User Interaction
 
-The following demonstrations show the validated workflow in operation: agents first turn stored inference results into explanations and maintenance actions, and users can then explore the same evidence through the unified chat system.
+The following demonstrations present two complementary views of the validated system: backend agent orchestration and user-facing interaction through the unified chat interface.
 
 ![End-to-end agent orchestration demo](../assets/orchestration.gif)
 
 *Figure 20. The final pipeline connects inference, agents, stored evidence, and user interaction.*
 
-The demonstration shows how a prediction becomes an explanation and an actionable maintenance result.
+The orchestration demo begins with inference results stored in the shared data layer. The policy agent filters the results according to the configured policy, while the analysis agent summarizes their operational meaning. The evidence agent organizes each inference result together with its associated source data and metadata into a traceable evidence record. Together, these agents transform stored model outputs into structured analysis and evidence that users can review.
 
 ![Unified chat system demo](../assets/chat_system.gif)
 
 *Figure 21. The unified chat system lets users explore stored predictions and supporting evidence through one question interface.*
 
-Together, the two demos connect backend orchestration with the user-facing path for investigating predictive-maintenance results.
+The unified chat demo shows how users interact with stored predictive-maintenance results through a single interface. Users can review analysis summaries, inspect evidence and filtering results, and query structured maintenance data. After investigating the results, they can create a maintenance ticket for follow-up action. This demonstrates the user-facing workflow from result exploration to ticket generation.
 
 ## 8. Discussion
 
