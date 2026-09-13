@@ -28,7 +28,7 @@ My GSoC project addressed this gap by improving both the user experience and the
 
 The upstream repository provided the foundation that I extended throughout the project.
 
-![Intel Predictive Maintenance Pipeline GitHub repository](images/12-upstream-repository.png)
+![Intel Predictive Maintenance Pipeline GitHub repository](images/02-upstream-repository.png)
 
 *Figure 2. Intel® Metro AI Predictive Maintenance Blueprint GitHub repository, which served as the upstream project for this work.*
 
@@ -40,13 +40,13 @@ This article presents the design and results visually. Full implementation detai
 
 The pipeline first runs an OpenVINO model and stores its results in JSONL and SQLite. A LangGraph workflow then coordinates policy, analysis, and evidence agents. Finally, users explore the results through chat or create a ticket with supporting evidence. 
 
-![End-to-end predictive maintenance flow](images/02-end-to-end-flow.png)
+![End-to-end predictive maintenance flow](images/03-end-to-end-flow.png)
 
 *Figure 3. A configurable path transforms industrial inputs into information that users can inspect and act upon.*
 
 The project was organized around four improvements.
 
-![Four core project contributions](images/03-core-contributions.png)
+![Four core project contributions](images/04-core-contributions.png)
 
 *Figure 4. The four contributions improve usability, explainability, extensibility, and application coverage.*
 
@@ -92,7 +92,7 @@ The original inference entry point contained many responsibilities. I separated 
 
 This refactoring made the next step possible: adding very different data types without rebuilding the pipeline for every use case.
 
-![Modular inference dispatcher architecture](images/11-modular-inference-dispatcher.png)
+![Modular inference dispatcher architecture](../assets/feature3/modular-inference-dispatcher.png)
 
 *Figure 8. The monolithic inference entry point was refactored into a dispatcher, focused handlers, and shared output components.*
 
@@ -100,7 +100,7 @@ New modalities can therefore be introduced through a focused handler and configu
 
 ## 4. Five Industrial Use Cases, One Shared Pipeline
 
-![Five new industrial use cases](images/04-five-use-cases.png)
+![Five new industrial use cases](images/09-five-use-cases.png)
 
 *Figure 9. A shared OpenVINO inference layer supports five use cases across four input patterns.*
 
@@ -118,7 +118,7 @@ Two representative records show the main geometric, material, operating, and cor
 
 During inference, each processed record produces two complementary outputs: a pipeline-condition class and an estimated thickness-loss value. The flow below shows how both predictions remain connected to their source measurements.
 
-![Oil and Gas Pipeline sensor inference flow](images/08-oil-gas-flow.png)
+![Oil and Gas Pipeline sensor inference flow](images/10-oil-gas-flow.png)
 
 *Figure 10. Tabular sensor preprocessing, OpenVINO inference, prediction, and evidence generation.*
 
@@ -138,7 +138,7 @@ This sample illustrates the localized evidence that the detector is expected to 
 
 The reproduced evaluation covered all 19,150 test images and achieved **0.8277 F1**.
 
-![Solar Panel Defects detection inference flow](images/09-solar-panel-flow.png)
+![Solar Panel Defects detection inference flow](images/12-solar-panel-flow.png)
 
 *Figure 12. Electroluminescence image preprocessing, OpenVINO detection, and bounding-box evidence generation.*
 
@@ -157,7 +157,7 @@ A fine-tuned YOLOv8s-cls model classifies synthetic and real-world transmission-
 
 The two domains test whether the same classifier can handle rendered circuit views and field inspection images.
 
-![Power Transmission Inspection classification flow](images/10-power-transmission-flow.png)
+![Power Transmission Inspection classification flow](images/14-power-transmission-flow.png)
 
 *Figure 14. A shared OpenVINO classification path processes synthetic and real-world inspection images.*
 
@@ -179,7 +179,7 @@ This use case pairs an audio clip with its caption. The audio and text paths are
 
 The visible frame provides context, while the inference input combines the clip's audio with its text caption.
 
-![Operational Environment Maintenance audio-text inference flow](images/06-audio-text-flow.png)
+![Operational Environment Maintenance audio-text inference flow](images/16-audio-text-flow.png)
 
 *Figure 16. Audio and text preprocessing, OpenVINO inference, and late fusion.*
 
@@ -199,7 +199,7 @@ This workflow pairs a 15-channel Sentinel-2 raster patch with an environmental t
 
 The preview is visual evidence for the reader rather than a replacement for the model's 15-channel input.
 
-![Water Treatment raster-text inference flow](images/07-raster-text-flow.png)
+![Water Treatment raster-text inference flow](images/18-raster-text-flow.png)
 
 *Figure 18. Raster and text preprocessing, OpenVINO inference, and late fusion.*
 
@@ -217,7 +217,7 @@ The code was validated on an Intel **GPU**, and pipeline inference was also conf
 
 I tested more than model accuracy. Each workflow was checked from model loading and structured output to agents, user interfaces, evidence, tickets, and Intel hardware execution.
 
-![End-to-end validation layers](images/05-validation.png)
+![End-to-end validation layers](images/19-validation.png)
 
 *Figure 19. Validation covered every layer from inference to user-facing action.*
 
