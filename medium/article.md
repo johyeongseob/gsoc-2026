@@ -1,8 +1,8 @@
 # Building an Agentic AI Predictive Maintenance Pipeline with Intel® OpenVINO and Intel® Metro AI Suite
 
-Critical infrastructure (pipelines, utilities, and assets) requires continuous inspection to prevent failures, leaks, and safety incidents. Traditional maintenance is reactive or scheduled, costing several truck rolls, missing early defect signals and generating fragmented evidence for audits. Agentic AI enables continuous, autonomous oversight of critical infrastructure and assets and proactive maintenance. This saves truck roll cost, reduces downtime, improves safety, and provides audit-ready operation.
+Critical infrastructure (pipelines, utilities, and assets) requires continuous inspection to prevent failures, leaks, and safety incidents. Traditional maintenance is often reactive or schedule-based, which can require multiple truck rolls, miss early defect signals, and generate fragmented evidence for audits. Agentic AI enables continuous, autonomous oversight of critical infrastructure and assets and proactive maintenance. This reduces truck-roll costs, minimizes downtime, improves safety, and supports audit-ready operations.
 
-This [GSoC project](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT) leverages Intel® Metro AI Suite **[blueprints](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/ai-suite-metro/app-blueprint-predictive-maintenance.html)** on agentic predictive maintenance powered by Intel® OpenVINO and provided feature expansions and introduced additional use cases through a set of new data sets.
+This [GSoC project](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT) leveraged the Intel® Metro AI Suite agentic predictive maintenance **[blueprint](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/ai-suite-metro/app-blueprint-predictive-maintenance.html)**, powered by Intel® OpenVINO, and expanded it with additional features and use cases based on new datasets.
 
 ![Agentic AI for Predictive Maintenance](images/01-hero.png)
 
@@ -10,7 +10,7 @@ This [GSoC project](https://summerofcode.withgoogle.com/programs/2026/projects/y
 
 ## About Me
 
-Hello, my name is Hyeongseob Jo. I hold a master's degree, and my graduate research focused on machine learning for the manufacturing domain. I currently work as a machine learning engineer. During Google Summer of Code 2026, I contributed to the Intel OpenVINO Toolkit organization by extending the Intel Metro AI Suite Predictive Maintenance Blueprint. My project focused on making the pipeline easier to use, explain, and extend across multiple industrial data modalities. Through this project, I also gained a deeper practical understanding of AI agents and how they can turn model outputs into actionable information.
+Hello, my name is Hyeongseob Jo. I hold a master's degree, and my graduate research focused on machine learning applications in manufacturing. I currently work as a machine learning engineer. During Google Summer of Code 2026, I contributed to the Intel OpenVINO Toolkit organization by extending the Intel Metro AI Suite Predictive Maintenance Blueprint. My project focused on making the pipeline easier to use, explain, and extend across multiple industrial data modalities. Through this project, I also gained a deeper practical understanding of AI agents and how they can turn model outputs into actionable information.
 
 ## Abstract
 
@@ -34,7 +34,7 @@ The upstream repository provided the foundation that I extended throughout the p
 
 The repository combines OpenVINO inference, structured storage, and agent orchestration in an edge AI predictive-maintenance blueprint.
 
-This article presents the design and results visually. Full implementation details, validation notes, and upstream contributions are collected in the [Resources](#resources) section.
+This article presents the design and results visually. Full implementation details, validation notes, and upstream contributions are collected in the **Resources** section at the end of this article.
 
 ## 2. System Architecture: One Pipeline for Multiple Industrial Modalities
 
@@ -94,7 +94,7 @@ This refactoring made the next step possible: adding very different data types w
 
 ![Modular inference dispatcher architecture](images/11-modular-inference-dispatcher.png)
 
-*Figure 8. Refactoring the monolithic inference entry point into a dispatcher, focused handlers, and shared output components.*
+*Figure 8. The monolithic inference entry point was refactored into a dispatcher, focused handlers, and shared output components.*
 
 New modalities can therefore be introduced through a focused handler and configuration while reusing the common lifecycle.
 
@@ -110,12 +110,11 @@ The inputs, prediction tasks, and evidence differ, but all five use cases share 
 
 Tabular operating and material data feeds an OpenVINO MLP that predicts both pipeline condition and thickness loss. The workflow also provides corrosion-focused analysis.
 
-Two representative records show the main geometric, material, operating, and corrosion-related inputs. The bold values are the ground-truth condition and thickness-loss labels used for prediction.
+Two representative records show the main geometric, material, operating, and corrosion-related inputs. The bold values are the ground-truth targets for pipeline condition and thickness loss.
 
-| Pipe size (mm) | Thickness (mm) | Material | Max. pressure (psi) | Temperature (C) | Corrosion impact (%) | Thickness loss (mm) | Condition |
-| ---: | ---: | --- | ---: | ---: | ---: | ---: | --- |
-| 800 | 15.48 | Carbon Steel | 300 | 84.9 | 16.04 | **4.91** | **Moderate** |
-| 800 | 22.0 | PVC | 150 | 14.1 | 7.38 | **7.32** | **Critical** |
+![Sample oil and gas pipeline inference results](../assets/feature4/oil-gas-pipeline/inference-results-table.png)
+
+*Table 1. Sample oil and gas pipeline inference results showing predicted thickness loss and condition.*
 
 During inference, each processed record produces two complementary outputs: a pipeline-condition class and an estimated thickness-loss value. The flow below shows how both predictions remain connected to their source measurements.
 
@@ -166,7 +165,7 @@ Both image sources use identical preprocessing and inference stages to produce a
 
 ### 4.4 Operational Environment Maintenance: Combining Audio and Text
 
-*(Manufacturing Maintenance in the repository)*
+*(**Manufacturing Maintenance** in the GitHub repository.)*
 
 This use case pairs an audio clip with its caption. The audio and text paths are preprocessed separately, classified by two OpenVINO MLP branches, and combined through late fusion.
 
@@ -176,7 +175,7 @@ This use case pairs an audio clip with its caption. The audio and text paths are
 
 <p align="center"><em>Paired text caption: “A power tool vibrates as it runs.”</em></p>
 
-*Figure 15. Representative frame from the audio clip paired with the text caption, labeled `rotating_machinery`.*
+*Figure 15. Representative video frame from the multimodal sample labeled **`rotating_machinery`** and paired with the caption “A power tool vibrates as it runs.”*
 
 The visible frame provides context, while the inference input combines the clip's audio with its text caption.
 
@@ -212,7 +211,7 @@ The pipeline can also attach the raster preview to a ticket, connecting a multim
 
 All inference models were deployed in OpenVINO IR format. Depending on the use case, the pipeline handles images, tabular sensor vectors, audio features, or paired multimodal inputs through the same configurable entry point.
 
-The code was validated on Intel **GPU**, and pipeline inference was also confirmed on Intel **NPU** with JSONL and SQLite output generation.
+The code was validated on an Intel **GPU**, and pipeline inference was also confirmed on an Intel **NPU**, including JSONL and SQLite output generation.
 
 ## 6. Validation: Testing the Complete Workflow
 
@@ -222,7 +221,7 @@ I tested more than model accuracy. Each workflow was checked from model loading 
 
 *Figure 19. Validation covered every layer from inference to user-facing action.*
 
-This verifies the integration boundaries as well as the individual model outputs.
+These tests verified both the integration boundaries and the individual model outputs.
 
 ## 7. Demo: From Inference Results to User Interaction
 
@@ -230,7 +229,7 @@ The following demonstrations present two complementary views of the validated sy
 
 ![End-to-end agent orchestration demo](../assets/orchestration.gif)
 
-*Figure 20. The final pipeline connects inference, agents, stored evidence, and user interaction.*
+*Figure 20. The orchestration workflow connects stored inference results with the policy, analysis, and evidence agents.*
 
 The orchestration demo begins with inference results stored in the shared data layer. The policy agent filters the results according to the configured policy, while the analysis agent summarizes their operational meaning. The evidence agent organizes each inference result together with its associated source data and metadata into a traceable evidence record. Together, these agents transform stored model outputs into structured analysis and evidence that users can review.
 
