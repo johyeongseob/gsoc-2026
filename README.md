@@ -3,9 +3,9 @@
 **Contributor:** Hyeongseob Jo  
 **Organization:** Intel / OpenVINO Toolkit
 **Project:** Agentic AI for Predictive Maintenance using OpenVINO  
-**Repository:** [intel/predictive-maintenance-pipeline](https://github.com/intel/predictive-maintenance-pipeline)
+**Repository:** https://github.com/intel/predictive-maintenance-pipeline
 
-**GSoC Project Page:** [Project Details](https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT)
+**GSoC Project Page:** https://summerofcode.withgoogle.com/programs/2026/projects/yvVZsgrT
 
 **Intel Mentors:**
 - Hassnaa Moustafa
@@ -17,9 +17,8 @@ This repository summarizes my Google Summer of Code (GSoC) 2026 leveraging Intel
 
 **Articles and Presentations**
 
-- [Medium article](medium/article.md)
-- [Lightning talk slides](lightning-talk/slides.pdf)
-- [Lightning talk script](lightning-talk/script.md) (Will be edited)
+- Medium article: https://medium.com/openvino-toolkit/building-an-agentic-ai-predictive-maintenance-pipeline-with-openvino-and-intel-metro-ai-suite-6490590f7130
+- Lightning talk slides: gsoc-2026/lightning-talk/slides.pdf
 
 
 ## Demo
