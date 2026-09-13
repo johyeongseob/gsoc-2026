@@ -7,7 +7,7 @@ This feature refactored the inference execution flow so `run_inference_oep.py` b
 The refactor separated the original monolithic inference flow into reusable
 configuration, execution, dispatch, handler, and output-writing components.
 
-![Feature 3 inference dispatcher refactoring](../assets/feature3/inference-dispatcher-refactor.svg)
+![Feature 3 modular inference dispatcher](../assets/feature3/modular-inference-dispatcher.png)
 
 ## Key Work
 
