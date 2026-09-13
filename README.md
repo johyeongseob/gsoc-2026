@@ -17,8 +17,8 @@ This repository summarizes my Google Summer of Code (GSoC) 2026 leveraging Intel
 
 **Articles and Presentations**
 
-- Medium article: https://medium.com/openvino-toolkit/building-an-agentic-ai-predictive-maintenance-pipeline-with-openvino-and-intel-metro-ai-suite-6490590f7130
-- Lightning talk slides: [gsoc-2026/lightning-talk/slides.pdf](lightning-talk/slides.pdf)
+- (2026.09.11) Medium article: https://medium.com/openvino-toolkit/building-an-agentic-ai-predictive-maintenance-pipeline-with-openvino-and-intel-metro-ai-suite-6490590f7130
+- (2026.09.15) Lightning talk slides: [gsoc-2026/lightning-talk/slides.pdf](lightning-talk/slides.pdf)
 
 
 ## Demo
