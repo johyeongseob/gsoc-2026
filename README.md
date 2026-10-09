@@ -9,7 +9,7 @@
 </p>
 
 **Contributor:** Hyeongseob Jo  
-**Organization:** Intel / OpenVINO Toolkit
+**Organization:** Intel / OpenVINO Toolkit  
 **Project:** Agentic AI for Predictive Maintenance using OpenVINO  
 **Repository:** https://github.com/intel/predictive-maintenance-pipeline
 
