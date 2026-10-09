@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-8);
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-3, .cls-4 {
+        fill: #f2bd42;
+      }
+
+      .cls-5 {
+        fill: #f8a100;
+      }
+
+      .cls-6 {
+        fill: #ccc;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-8, .cls-9 {
+        fill: #c95c02;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        filter: url(#drop-shadow-9);
+      }
+
+      .cls-11 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-12 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-13 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-14 {
+        fill: #92b4f2;
+      }
+
+      .cls-15 {
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-15, .cls-16, .cls-17 {
+        fill: #df6900;
+      }
+
+      .cls-16 {
+        filter: url(#drop-shadow-7);
+      }
+
+      .cls-17 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-18 {
+        filter: url(#AI_Shadow_3);
+        opacity: .2;
+      }
+    </style>
+    <filter id="AI_Shadow_3" x="-15%" y="-15%" width="140%" height="130%">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="10"/>
+      <feOffset dx="0" dy="5" in="blur" result="offsetBlurredAlpha"/>
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clippath-2">
+      <circle class="cls-1" cx="293.86" cy="292.69" r="226.67"/>
+    </clipPath>
+    <filter id="drop-shadow-1" x="386.35" y="133.7" width="210.72" height="135.84" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".06"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" x="13.39" y="200.9" width="210.48" height="135.6" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".06"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" x="245.95" y="378.02" width="376.08" height="242.64" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-3" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".06"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" x="107.71" y="106.34" width="387.12" height="387.12" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-4" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" x="254.59" y="6.74" width="232.08" height="190.56" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-5" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" x="222.19" y="221.06" width="157.92" height="157.92" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-6" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-7" x="254.59" y="6.74" width="232.08" height="190.56" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-7" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur-7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-8" x="111.63" y="2.03" width="210" height="198.48" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur-8" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".06"/>
+      <feComposite in2="blur-8" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-9" x="115.63" y="6.74" width="187.68" height="175.44" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.26" dy="7.26"/>
+      <feGaussianBlur result="blur-9" stdDeviation="5.19"/>
+      <feFlood flood-color="#000" flood-opacity=".12"/>
+      <feComposite in2="blur-9" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <g id="svg_shadow" data-name="svg shadow" class="cls-18">
+        <circle class="cls-6" cx="294.13" cy="292.26" r="241.5"/>
+      </g>
+      <path class="cls-10" d="M294.12,65.85c30.57,0,60.22,5.98,88.13,17.79,26.96,11.4,51.17,27.73,71.97,48.53,20.8,20.8,37.13,45.01,48.53,71.97,11.8,27.9,17.79,57.55,17.79,88.13s-5.98,60.22-17.79,88.13c-11.4,26.96-27.73,51.17-48.53,71.97s-45.01,37.13-71.97,48.53c-27.9,11.8-57.55,17.79-88.13,17.79s-60.22-5.98-88.13-17.79c-26.96-11.4-51.17-27.73-71.97-48.53-20.8-20.8-37.13-45.01-48.53-71.97-11.8-27.9-17.79-57.55-17.79-88.13s5.98-60.22,17.79-88.13c11.4-26.96,27.73-51.17,48.53-71.97,20.8-20.8,45.01-37.13,71.97-48.53,27.9-11.8,57.55-17.79,88.13-17.79M294.12,50.85c-133.33,0-241.41,108.09-241.41,241.42s108.08,241.41,241.41,241.41,241.41-108.09,241.41-241.41S427.45,50.85,294.12,50.85h0Z"/>
+    </g>
+    <circle class="cls-1" cx="294.13" cy="292.26" r="218.44"/>
+    <g class="cls-7">
+      <circle class="cls-14" cx="293.86" cy="292.69" r="226.67"/>
+      <path class="cls-11" d="M549.22,201.93c2.48-5.96,3.68-12.6,3.2-19.57-1.44-21.33-18.69-38.6-40.02-40.06-22.98-1.57-42.45,14.87-45.7,36.61-6.61-4.11-14.4-6.48-22.75-6.48-23.83,0-42.86,8.03-48.37,31.38-.97,4.13-.88,8.31-.11,12.36,3.38,17.72,19.33,30.27,37.37,30.27h126.59l14.51-48.42-24.72,3.91Z"/>
+      <path class="cls-13" d="M46.54,268.98c-2.48-5.96-3.68-12.6-3.2-19.57,1.44-21.33,18.69-38.6,40.02-40.06,22.98-1.57,42.45,14.87,45.7,36.61,6.61-4.11,14.4-6.48,22.75-6.48,23.83,0,42.86,8.03,48.37,31.38.97,4.13.88,8.31.11,12.36-3.38,17.72-19.33,30.27-37.37,30.27H36.32s-14.51-48.42-14.51-48.42l24.72,3.91Z"/>
+      <path class="cls-12" d="M548.45,392.09c-4.57,2.43-8.36,5.75-11.28,9.63-21.75-16.88-52.24-20.49-78.12-6.72-24.59,13.08-38.5,38.37-38.25,64.42-8.5-2.7-18.04-2.11-26.53,2.41-6.58,3.5-11.55,8.84-14.63,15.05-21.68-23.7-57.4-30.73-87.06-14.94-35.16,18.71-48.5,62.37-29.8,97.54,18.71,35.16,62.38,48.5,97.54,29.8,24.73-13.16,137.34-51.12,166.68-66.72,25.02-13.31,38.97-39.25,38.22-65.78,5.25-.09,10.56-1.38,15.51-4.02,16.75-8.91,23.11-29.71,14.19-46.46-8.91-16.75-29.71-23.1-46.46-14.19Z"/>
+      <polygon class="cls-3" points="419.62 344.78 471.71 292.69 419.62 240.6 419.62 166.93 345.95 166.93 293.86 114.84 241.78 166.93 168.11 166.93 168.11 240.6 116.02 292.69 168.11 344.78 168.11 418.44 241.78 418.44 293.86 470.53 345.95 418.44 419.62 418.44 419.62 344.78"/>
+      <rect class="cls-8" x="258.53" y="167.27" width="73.97" height="10.88" rx="5.44" ry="5.44"/>
+      <path class="cls-4" d="M258.47,171.68h0c0-2.37,1.92-4.3,4.3-4.3h65.38c2.37,0,4.3,1.92,4.3,4.3h21.72l-67.37-49.31-60.05,56.64,31.72-7.34Z"/>
+      <path class="cls-17" d="M325.96,173.24L463.74,35.46l-41.66-20.22-159.15,159.15h60.23c1.05,0,2.05-.42,2.8-1.16Z"/>
+      <g>
+        <polygon class="cls-5" points="370.48 324.42 402.21 292.69 370.48 260.95 370.48 216.07 325.6 216.07 293.86 184.34 262.13 216.07 217.25 216.07 217.25 260.95 185.52 292.69 217.25 324.42 217.25 369.3 262.13 369.3 293.86 401.03 325.6 369.3 370.48 369.3 370.48 324.42"/>
+        <circle class="cls-15" cx="293.86" cy="292.69" r="63.2"/>
+        <g>
+          <path class="cls-10" d="M275.18,311.24l-20.87-17.14v-5.74l20.87-18.21v9.68l-13.49,11.24,13.49,10.58v9.6Z"/>
+          <path class="cls-10" d="M284.16,320.59l13.35-59.21h6.07l-13.3,59.21h-6.11Z"/>
+          <path class="cls-10" d="M312.55,311.24v-9.6l13.49-10.58-13.49-11.24v-9.68l20.87,18.21v5.74l-20.87,17.14Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <path class="cls-16" d="M325.96,173.24L463.74,35.46l-41.66-20.22-159.15,159.15h60.23c1.05,0,2.05-.42,2.8-1.16Z"/>
+  <g class="cls-2">
+    <polygon class="cls-9" points="165.67 15.25 124.01 35.46 247.75 159.2 280.35 128.89 165.67 15.25"/>
+  </g>
+</svg>

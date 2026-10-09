@@ -1,5 +1,13 @@
 # Google Summer of Code 2026 Project
 
+<p align="center">
+  <a href="https://developers.google.com/profile/badges/community/gsoc/finisher?u=johyeongseob&hl=en">
+    <img src="assets/gsoc-contributor-badge.svg" alt="Google Summer of Code 2026 Contributor badge" width="88" />
+  </a>
+  <br />
+  <sub>Google Summer of Code 2026 Contributor</sub>
+</p>
+
 **Contributor:** Hyeongseob Jo  
 **Organization:** Intel / OpenVINO Toolkit
 **Project:** Agentic AI for Predictive Maintenance using OpenVINO  
